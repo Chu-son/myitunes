@@ -47,7 +47,7 @@
             // 
             // nowBtn
             // 
-            this.nowBtn.Location = new System.Drawing.Point(12, 12);
+            this.nowBtn.Location = new System.Drawing.Point(506, 12);
             this.nowBtn.Name = "nowBtn";
             this.nowBtn.Size = new System.Drawing.Size(99, 47);
             this.nowBtn.TabIndex = 1;
@@ -71,7 +71,7 @@
             // 
             // syncBtn
             // 
-            this.syncBtn.Location = new System.Drawing.Point(117, 12);
+            this.syncBtn.Location = new System.Drawing.Point(13, 12);
             this.syncBtn.Name = "syncBtn";
             this.syncBtn.Size = new System.Drawing.Size(99, 47);
             this.syncBtn.TabIndex = 3;
