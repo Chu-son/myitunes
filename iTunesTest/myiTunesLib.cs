@@ -25,13 +25,13 @@ namespace iTunesTest
     {
         public event _IiTunesEvents_OnPlayerPlayEventEventHandler OnPlayerPlayEvent;
 
-        private static iTunesAppClass _iTunesApp = new iTunesAppClass();
+        private iTunesApp iTunes = new iTunesApp();
         private Form _w;
 
         public MyiTunesLib(Form w)
         {
             _w = w;
-            _iTunesApp.OnPlayerPlayEvent += new _IiTunesEvents_OnPlayerPlayEventEventHandler(iTunesApp_OnPlayerPlayEvent);
+            iTunes.OnPlayerPlayEvent += new _IiTunesEvents_OnPlayerPlayEventEventHandler(iTunesApp_OnPlayerPlayEvent);
         }
 
         private void iTunesApp_OnPlayerPlayEvent(object iTrack)

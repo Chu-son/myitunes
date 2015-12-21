@@ -25,16 +25,11 @@ namespace iTunesTest
             lyricTxt.Text = MyiTunesLib.GetCurrentMusicLyrics();
         }
 
-        private void iTunesApp_OnPlayerPlayEvent(object iTrack)
+        public void OnPlayerPlayEvent(object iTrack)
         {
             //曲名とか設定
             currentTxt.Text = MyiTunesLib.GetCurrentMusic();
-            lyricTxt.Text = MyiTunesLib.GetCurrentMusicLyrics();
-
-            //アートワークの設定
-            //SetArtWork(track);
-
-            
+            lyricTxt.Text = MyiTunesLib.GetCurrentMusicLyrics();            
         }
 
         private void syncBtn_Click(object sender, EventArgs e)
